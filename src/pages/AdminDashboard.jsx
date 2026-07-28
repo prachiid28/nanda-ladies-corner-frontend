@@ -170,16 +170,11 @@ function AdminDashboard() {
     try{
 
 
-      await api.delete(`/products/${id}`,{
-
-        headers:{
-
-          Authorization:`Bearer ${getToken()}`
-
-        }
-
-      });
-
+      await api.post("/products", formData, {
+  headers:{
+    "Content-Type":"multipart/form-data"
+  }
+});
 
 
       await fetchProducts();
