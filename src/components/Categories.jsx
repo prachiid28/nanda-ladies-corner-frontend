@@ -9,8 +9,7 @@ import {
 } from "react-icons/gi";
 
 
-function Categories({setSelectedCategory}){
-
+function Categories({setSelectedCategory, scrollToProducts}){
 
 const categories = [
 
@@ -63,8 +62,10 @@ className="category-card"
 
 key={item.name}
 
-onClick={()=>setSelectedCategory(item.name)}
-
+onClick={()=>{
+  setSelectedCategory(item.name);
+  scrollToProducts();
+}}
 >
 
 

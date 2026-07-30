@@ -7,6 +7,11 @@ import Categories from "../components/Categories";
 
 
 function Home(){
+    const scrollToProducts = () => {
+  document.getElementById("products").scrollIntoView({
+    behavior:"smooth"
+  });
+};
 
 const [products,setProducts]=useState([]);
 
@@ -73,6 +78,7 @@ Visit our shop and explore beautiful collections
 
 <Categories 
 setSelectedCategory={setSelectedCategory}
+scrollToProducts={scrollToProducts}
 />
 
 
