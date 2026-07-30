@@ -171,3 +171,175 @@ padding:50px;
 background:#ffe4ec;
 
 }
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+
+/* Navbar */
+
+.navbar{
+
+height:auto;
+padding:15px 20px;
+flex-direction:column;
+gap:15px;
+
+}
+
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+.nav-links{
+
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+.nav-links a{
+
+font-size:14px;
+
+}
+
+
+
+/* Hero */
+
+.hero{
+
+padding:45px 15px;
+
+}
+
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+
+/* Categories */
+
+.categories{
+
+padding:30px 15px;
+
+}
+
+
+.category-grid{
+
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+
+.category-card{
+
+width:140px;
+padding:20px;
+
+}
+
+
+.icon{
+
+font-size:32px;
+
+}
+
+
+
+/* Products */
+
+.products{
+
+padding:30px 15px;
+
+}
+
+
+.product-grid{
+
+grid-template-columns:1fr;
+gap:20px;
+
+}
+
+
+.product-card{
+
+padding:15px;
+
+}
+
+
+.product-card img{
+
+height:280px;
+
+}
+
+
+
+/* Contact */
+
+.contact{
+
+padding:35px 15px;
+
+}
+
+
+}
+
+
+
+/* Small phones */
+
+@media(max-width:400px){
+
+
+.hero h1{
+
+font-size:25px;
+
+}
+
+
+.category-card{
+
+width:100%;
+
+}
+
+
+.product-card img{
+
+height:230px;
+
+}
+
+
+}
